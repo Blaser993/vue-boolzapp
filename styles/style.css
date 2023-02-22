@@ -20,6 +20,10 @@ li{
     list-style-type: none;
 }
 
+h6{
+    text-align: end;
+}
+
 
 
 .bzapp__container{
@@ -86,6 +90,7 @@ li{
     padding: 0;
 }
 
+
 /* main stile ---------------------------------------------------------- */
 
 
@@ -94,4 +99,37 @@ li{
     background-color: burlywood;
 }
 
+.chatting__head{
+    background-color: #EAEAEA;
+    border-left: grey 1px solid;
+}
 
+.chatting__content{
+    background-image: url(../img/bg-content.jpg);
+    mask-image: sepia(30%) brightness(85%) ;
+/* -webkit-filter: sepia(100%) brightness(70%) saturate(129%) contrast(120%); */
+/* -moz-filter: sepia(100%) brightness(70%) saturate(129%) contrast(120%); */
+
+    
+}
+
+.chatting__input{
+    background-color: #EAEAEA;
+    border-left: grey 1px solid;
+
+}
+
+.message{
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.sent{  
+    background-color: #D5F9BA;
+}
+
+.received{
+    background-color:#FFFFFF;
+}

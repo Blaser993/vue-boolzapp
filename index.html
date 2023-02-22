@@ -22,7 +22,7 @@
                         <div class="row">
                             <header class="chatlist__header p-0 col-12">
 
-                                <div class="container-fluid chatlist__head row justify-content-between my-auto p-3 mx-0">
+                                <div class="chatlist__head container-fluid row justify-content-between my-auto p-3 mx-0">
                                     <div class="col-auto ">
                                         <div class="row ">
 
@@ -60,7 +60,7 @@
                                 
                             </header>
 
-                            <section class="chatlist__chats ps-0 col-12 ">
+                            <section class="chatlist__chats px-0 col-12 ">
                                 <div class="chats__preview align-middle ms-0">
                                     <img class="preview__pic col-auto flex-shrink-0 mx-2" src="./img/avatar_1.png" alt="pic">
                                     <div class="preview__content col-auto flex-grow-1 px-2">
@@ -84,14 +84,51 @@
                     </div>
                 </aside>
 
-                <main class="bzapp__chatting p-0 col-8">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
+                <main class="bzapp__chatting p-0 col-8 container row flex-column justify-content-between px-0 m-0">
+                    
+                        
+                        <div class="chatting__head col-auto container-fluid row justify-content-between  my-0 p-3 mx-0">
+                            
+                            <div class="col-auto">
+                                <div class="row ">
+
+                                    <img class="preview__pic col-auto " src="./img/avatar_1.png" alt="profilo">
+                                    <div class="col-auto my-auto"><h3>User</h3><h5>Ultimo accesso</h5></div>
+                                </div>
+                            </div>
+                            
+
+                            <ul class="col-auto my-auto row ">
+                                <li class="col-auto"><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li class="col-auto"><i class="fa-solid fa-link"></i></li>
+                                <li class="col-auto"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                                
+                            
                         </div>
-                    </div>
+                        
+                        <div class="chatting__content col-auto flex-grow-1 m-0 p-5">
+                            <div class=" col-12 row justify-content-end m-2">
+                                <div class="col-5 message sent"><h4>Ciao</h4><h6>time</h6></div>
+                            </div>
+
+                            <div class=" col-12 row flex-column justify-content-start m-2">
+                                <div class="col-5 message received"><h4>Ciao</h4> <h6>time</h6></div>
+                                <div class="col-5 message received"><h4>ok</h4> <h6>time</h6></div>
+                            </div>
+                        </div>
+
+                        <div class="chatting__input col-auto align-middle  row p-2 m-0">
+                            <div class="col-1 m-auto row justify-content-center"><i class="fa-regular fa-face-smile "></i></div>
+
+                            <div class="col-auto flex-grow-1 ">
+                                <input type="text" class="form-control p-3" placeholder="Scrivi un messaggio">
+                            </div>
+
+                            <div class="col-1 m-auto row justify-content-center"><i class="fa-solid fa-microphone px-auto"></i></div>
+                        </div>
+                        
+                   
                 </main>
                 
             </div>
