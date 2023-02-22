@@ -8,4 +8,4 @@ createApp({
       message: 'Hello Vue!'
     }
   }
-}).mount('#app')
+}).mount('#bzapp')

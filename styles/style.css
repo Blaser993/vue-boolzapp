@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.bzapp-container{
+    position: sticky;
+    padding: 48px;
+    overflow: hidden;
+    background-color: green;
+    height: 100vh;
+    width: 100%;
+}
+
+.bzapp-chatlist{
+    
+    height: 100%;
+    overflow: scroll;
+    background-color: white;
+}
+
+.bzapp-chatting{
+    
+    max-height: 100%;
+    background-color: burlywood;
+}
+
