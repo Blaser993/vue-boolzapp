@@ -9,6 +9,17 @@ img{
     display: block;
 }
 
+.input-group span{
+    background-color: white;
+}
+
+menu,
+ul,
+ol,
+li{
+    list-style-type: none;
+}
+
 
 
 .bzapp__container{
@@ -33,21 +44,25 @@ img{
     background-color: white;
 }
 
-.chatlist__head{
+.chatlist__header{
     position: sticky;
     top:0;
     z-index: 1;
-    background-color: grey;
+    background-color: #EAEAEA;
+}
+
+.chatlist__head{
+    
 }
 
 .chatlist__alert{
     padding: 12px;
-    background-color: cyan;
+    background-color:#8EDAFC;
 }
 
 .chatlist__searchbar{
     padding: 12px;
-    background-color: grey;
+    background-color:#FAFAFA;
 }
 
 .chatlist__chats{
@@ -58,14 +73,17 @@ img{
 
 .chats__preview{
     display: flex;
-    background-color: antiquewhite;
-    border-top: 1px solid grey;
+    background-color: white;
+    border-top: 1px solid #EAEAEA;
     padding: 1rem;
 }
 
 .preview__pic {
-    max-height: 80px;
+    align-self: center;
+    max-height: 64px;
     aspect-ratio: 1;
+    flex-shrink: 0;
+    padding: 0;
 }
 
 /* main stile ---------------------------------------------------------- */

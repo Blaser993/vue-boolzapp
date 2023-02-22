@@ -20,19 +20,63 @@
                 <aside class="bzapp__chatlist p-0  col-4">
                     <div class="container">
                         <div class="row">
-                            <header class="chatlist__head p-0 col-12">header
-                                <div class="chatlist__alert"></div>
-                                <div class="chatlist__searchbar"></div>
+                            <header class="chatlist__header p-0 col-12">
+
+                                <div class="container-fluid chatlist__head row justify-content-between my-auto p-3 mx-0">
+                                    <div class="col-auto ">
+                                        <div class="row ">
+
+                                            <img class="preview__pic col-auto " src="./img/avatar_1.png" alt="profilo">
+                                            <div class="col-auto my-auto"><h3>User</h3></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <ul class="col-auto my-auto row ">
+                                        <li class="col-auto"><i class="fa-solid fa-circle-notch"></i></li>
+                                        <li class="col-auto"><i class="fa-solid fa-message"></i></li>
+                                        <li class="col-auto"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                                    </ul>
+                                    
+                                </div>
+
+
+                                <div class="chatlist__alert col-12 row m-0">
+                                    
+                                    <img class="preview__pic col-auto " src="./img/avatar_1.png" alt="profilo">
+                                    <div class="col-auto my-auto"><h3>User</h3><h5>Attiva notifiche desktop</h5></div>
+                                    
+                                </div>
+                                
+                                <nav class="navbar chatlist__searchbar p-2">
+                                    
+                                        
+                                    <div class="input-group">
+                                        <span class="input-group-text  col-2 justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" class="form-control col-auto flex-grow-1" placeholder="Cerca o inizia una nuova chat">
+                                    </div>                                        
+                                        
+                                    
+                                </nav>
+                                
                             </header>
 
                             <section class="chatlist__chats ps-0 col-12 ">
-                                <div class="chats__preview ms-0">
-                                    <img class="preview__pic col-auto flex-shrink-0" src="./img/avatar_1.png" alt="pic">
-                                    <div class="preview__content col-auto flex-grow-1">
-                                        <h2>Nome</h2>
-                                        <h4>info</h4>
+                                <div class="chats__preview align-middle ms-0">
+                                    <img class="preview__pic col-auto flex-shrink-0 mx-2" src="./img/avatar_1.png" alt="pic">
+                                    <div class="preview__content col-auto flex-grow-1 px-2">
+                                        <h3>Nome</h3>
+                                        <h5>info</h5>
                                     </div>
-                                    <div class="preview__info col-auto"><h4>time</h4></div>
+                                    <div class="preview__info col-auto"><h5>time</h5></div>
+                                </div>
+
+                                <div class="chats__preview align-middle ms-0">
+                                    <img class="preview__pic col-auto flex-shrink-0 mx-2" src="./img/avatar_2.png" alt="pic">
+                                    <div class="preview__content col-auto flex-grow-1 px-2">
+                                        <h3>Nome</h3>
+                                        <h5>info</h5>
+                                    </div>
+                                    <div class="preview__info col-auto"><h5>time</h5></div>
                                 </div>
 
                             </section>

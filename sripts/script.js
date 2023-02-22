@@ -2,7 +2,7 @@ console.log("ciao")
 
 const { createApp } = Vue
 
-contacts= [{
+const contacts= [{
     name: 'Michele',
     avatar: './img/avatar_1.png',
     visible: true,
