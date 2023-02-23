@@ -49,7 +49,7 @@ i{
 
 .bzapp__chatlist{
     position: relative;
-    overflow: auto;
+    overflow-y:scroll;
     height: 100%;
     border-right: 1px solid lightgray;
     background-color: white;
@@ -58,7 +58,7 @@ i{
 .chatlist__header{
     position: sticky;
     top:0;
-    z-index: 1;
+    
     background-color: #EAEAEA;
 }
 
@@ -77,11 +77,12 @@ i{
 }
 
 .chatlist__chats{
-    overflow-y: auto;
+    
     background-color: white;
 }
 
 .chats__preview{
+    
     display: flex;
     background-color: white;
     border-top: 1px solid #EAEAEA;
@@ -126,6 +127,7 @@ i{
 
 
 .bzapp__chatting{
+    overflow-y: scroll;
     max-height: 100%;
     background-color: burlywood;
 }
@@ -136,7 +138,7 @@ i{
 }
 
 .chatting__content{
-    overflow: auto;
+
     padding: 4rem 10%;
     height: 300px;
     background-image: url(../img/bg-content.png);

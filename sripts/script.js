@@ -170,5 +170,15 @@ createApp({
       message: 'Hello Vue!',
       contacts: contacts,
     }
-  }
+  },
+
+  methods: {
+
+    function(){
+
+    },
+
+  },
+
+
 }).mount('#bzapp')
