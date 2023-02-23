@@ -180,9 +180,9 @@ createApp({
 
     selectChat(activeChat){
         
-        activeChat = this.contacts[activeChat]
+        this.activeChat = this.contacts[activeChat]
         
-        console.log(this.activeChat)
+        console.log(activeChat)
     },
 
   },
