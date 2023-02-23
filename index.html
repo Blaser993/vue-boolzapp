@@ -17,66 +17,68 @@
             <div class="bzapp__container container-fluid mx-0 row">
                 
 
-                <aside class="bzapp__chatlist p-0  col-4">
-                    <div class="container">
-                        <div class="row">
-                            <header class="chatlist__header p-0 col-12">
+                <aside class="bzapp__chatlist p-0 container row flex-column  col-4">
+                    
+                        
+                    
 
-                                <div class="chatlist__head container-fluid row justify-content-between my-auto p-3 mx-0">
-                                    <div class="col-auto ">
-                                        <div class="row ">
+                    <div class="chatlist__head col-auto row justify-content-between my-auto p-3 m-0">
+                        <div class="col-auto ">
+                            <div class="row ">
 
-                                            <img class="preview__pic col-auto " src="./img/user.png" alt="profilo">
-                                            <div class="col-auto my-auto"><h3>User</h3></div>
-                                        </div>
-                                    </div>
-                                    
-                                    <ul class="col-auto my-auto row ">
-                                        <li class="col-auto"><i class="fa-solid fa-circle-notch"></i></li>
-                                        <li class="col-auto"><i class="fa-solid fa-message"></i></li>
-                                        <li class="col-auto"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                                    </ul>
-                                    
-                                </div>
-
-
-                                <div class="chatlist__alert col-12 row m-0">
-                                    <div class=" bzapp-white col-auto">
-
-                                        <i class="fa-solid fa-bell-slash "></i>
-                                    </div>
-                                    <div class="col-auto my-auto"><h3>Ricevi le notifiche</h3><h5>Attiva notifiche desktop</h5></div>
-                                    
-                                </div>
-                                
-                                <nav class="navbar chatlist__searchbar p-2">
-                                    
-                                        
-                                    <div class="input-group">
-                                        <span class="input-group-text  col-2 justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                        <input type="text" class="form-control col-auto flex-grow-1" placeholder="Cerca o inizia una nuova chat">
-                                    </div>                                        
-                                        
-                                    
-                                </nav>
-                                
-                            </header>
-
-                            <ul class="chatlist__chats px-0 col-12 ">
-                                <li class="chats__preview align-middle ms-0" v-for="contact in contacts">
-                                    <img class="preview__pic col-auto flex-shrink-0 mx-2" :src="contact.avatar" />
-                                    <div class="preview__content col-auto flex-grow-1 px-2">
-                                        <h3>{{contact.name}}</h3>
-                                        <h5>Ultimo messaggio inviato</h5>
-                                    </div>
-                                    <div class="preview__info col-auto"><h5>ieri</h5></div>
-                                </li>
-
-
-
-                            </ul>
+                                <img class="preview__pic col-auto " src="./img/user.png" alt="profilo">
+                                <div class="col-auto my-auto"><h3>User</h3></div>
+                            </div>
                         </div>
+                        
+                        <ul class="col-auto my-auto row ">
+                            <li class="col-auto"><i class="fa-solid fa-circle-notch"></i></li>
+                            <li class="col-auto"><i class="fa-solid fa-message"></i></li>
+                            <li class="col-auto"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        </ul>
+                        
                     </div>
+
+
+                    <div class="chatlist__alert col-auto row m-0">
+                        <div class=" bzapp-white col-auto">
+
+                            <i class="fa-solid fa-bell-slash "></i>
+                        </div>
+                        <div class="col-auto my-auto"><h3>Ricevi le notifiche</h3><h5>Attiva notifiche desktop</h5></div>
+                        
+                    </div>
+                    
+                    <nav class="navbar chatlist__searchbar col-auto p-2">
+                        
+                            
+                        <div class="input-group">
+                            <span class="input-group-text  col-2 justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control col-auto flex-grow-1" placeholder="Cerca o inizia una nuova chat">
+                        </div>                                        
+                            
+                        
+                    </nav>
+                    
+                    
+
+                    <ul class="chatlist__chats px-0 col-auto">
+                        <li class="chats__preview align-middle ms-0"
+                        @click="selectChat" 
+                        v-for="(contact, i) in contacts">
+                            <img class="preview__pic col-auto flex-shrink-0 mx-2" :src="contact.avatar" />
+                            <div class="preview__content col-auto flex-grow-1 px-2">
+                                <h3>{{contact.name}}</h3>
+                                <h5>Ultimo messaggio inviato</h5>
+                            </div>
+                            <div class="preview__info col-auto"><h5>ieri</h5></div>
+                        </li>
+
+
+
+                    </ul>
+                    
+                    
                 </aside>
 
                 <main class="bzapp__chatting p-0 col-8 container row flex-column justify-content-between px-0 m-0">

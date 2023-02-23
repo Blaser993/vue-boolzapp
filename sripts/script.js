@@ -164,18 +164,25 @@ const contacts= [{
     ],}
 ]
 
+
+
 createApp({
   data() {
     return {
       message: 'Hello Vue!',
       contacts: contacts,
+      activeChat: 0,
+      
     }
   },
 
   methods: {
 
-    function(){
-
+    selectChat(i){
+        
+        activeChat = this.contacts[i]
+        
+        console.log(this.activeChat)
     },
 
   },
