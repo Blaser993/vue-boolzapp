@@ -169,11 +169,16 @@ const contacts= [{
 createApp({
   data() {
     return {
-      message: 'Hello Vue!',
-      contacts: contacts,
-      activeChat: 0,
-      activeName: "Michele",
-      activeAvatar: './img/avatar_1.png'
+        
+        contacts: contacts,
+
+        activeChat: 0,
+
+        activeName: "Michele",
+
+        activeAvatar: './img/avatar_1.png',
+        
+        messages: contacts.messages,
     }
   },
 

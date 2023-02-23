@@ -108,9 +108,14 @@
                             
                         </div>
                         
-                        <div class="chatting__content col-auto flex-grow-1 m-0 ">
+                        <div  
+                        class="chatting__content col-auto flex-grow-1 m-0 ">
                             <ul class="col-12 row flex-column  m-2">
-                                <li class="message sent"><h4>Hai sceso il cane a pisciare?</h4><h6>time</h6></li>
+                                <li class="message sent">
+                                    <h4 v-for="(elemento, i)" in contacts.messages >
+                                        {{elemento.message}}
+                                    </h4><h6>time</h6>
+                                </li>
                             </ul>
 
                             <ul class="col-12 row flex-column m-2">
