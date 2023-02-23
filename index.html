@@ -64,8 +64,8 @@
 
                     <ul class="chatlist__chats px-0 col-auto">
                         <li class="chats__preview align-middle ms-0"
-                        @click="selectChat" 
-                        v-for="(contact, i) in contacts">
+                        @click="selectChat(activeChat)" 
+                        v-for="(contact, activeChat) in contacts">
                             <img class="preview__pic col-auto flex-shrink-0 mx-2" :src="contact.avatar" />
                             <div class="preview__content col-auto flex-grow-1 px-2">
                                 <h3>{{contact.name}}</h3>

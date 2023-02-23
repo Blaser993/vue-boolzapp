@@ -178,9 +178,9 @@ createApp({
 
   methods: {
 
-    selectChat(i){
+    selectChat(activeChat){
         
-        activeChat = this.contacts[i]
+        activeChat = this.contacts[activeChat]
         
         console.log(this.activeChat)
     },
