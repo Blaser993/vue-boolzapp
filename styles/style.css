@@ -18,13 +18,18 @@ ul,
 ol,
 li{
     list-style-type: none;
+    padding: 0;
 }
 
 h6{
     text-align: end;
+    padding-bottom: 0.25rem;
     margin: 0;
 }
 
+i{
+    font-size: 24px;
+}
 
 
 .bzapp__container{
@@ -46,6 +51,7 @@ h6{
     position: relative;
     overflow: auto;
     height: 100%;
+    border-right: 1px solid lightgray;
     background-color: white;
 }
 
@@ -61,18 +67,17 @@ h6{
 }
 
 .chatlist__alert{
-    padding: 12px;
+    padding: 1rem;
     background-color:#8EDAFC;
 }
 
 .chatlist__searchbar{
-    padding: 12px;
+    padding: 1rem;
     background-color:#FAFAFA;
 }
 
 .chatlist__chats{
-    
-    overflow: scroll;
+    overflow-y: auto;
     background-color: white;
 }
 
@@ -83,13 +88,38 @@ h6{
     padding: 1rem;
 }
 
+.chats__preview:hover{
+    background-color: #EAEAEA;
+}
+
 .preview__pic {
+    border-radius: 9999px;
     align-self: center;
     max-height: 64px;
     aspect-ratio: 1;
     flex-shrink: 0;
     padding: 0;
 }
+
+.bzapp-white{
+    border-radius: 9999px;
+    align-self: center;
+    max-height: 64px;
+    aspect-ratio: 1;
+    flex-shrink: 0;   
+    height: 64px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.bzapp-white i{
+    color: #8EDAFC;
+    margin-top: 50%;
+    
+  
+}
+
 
 
 /* main stile ---------------------------------------------------------- */
@@ -102,12 +132,15 @@ h6{
 
 .chatting__head{
     background-color: #EAEAEA;
-    border-left: grey 1px solid;
+ 
 }
 
 .chatting__content{
-    background-image: url(../img/bg-content.jpg);
-    mask-image: sepia(30%) brightness(85%) ;
+    overflow: auto;
+    padding: 4rem 10%;
+    height: 300px;
+    background-image: url(../img/bg-content.png);
+
 /* -webkit-filter: sepia(100%) brightness(70%) saturate(129%) contrast(120%); */
 /* -moz-filter: sepia(100%) brightness(70%) saturate(129%) contrast(120%); */
 
@@ -116,21 +149,29 @@ h6{
 
 .chatting__input{
     background-color: #EAEAEA;
-    border-left: grey 1px solid;
+
 
 }
 
 .message{
-    border-radius: 0.75rem;
-    padding: 0.5rem 0.75rem;
+    display: block;
+    width: fit-content;
+    min-width: 20%;
+    max-width: 70%;
+    padding: 0.5rem 1rem;
     padding-bottom: 0.25rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .sent{  
+    border-radius: 1rem 0px 1rem 1rem;
+    align-self: flex-end;
     background-color: #D5F9BA;
+    margin-right: 1rem;
 }
 
 .received{
+    border-radius: 0px 1rem 1rem 1rem;
+    justify-self: flex-start;
     background-color:#FFFFFF;
 }
