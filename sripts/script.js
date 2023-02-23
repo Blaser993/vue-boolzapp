@@ -172,7 +172,8 @@ createApp({
       message: 'Hello Vue!',
       contacts: contacts,
       activeChat: 0,
-      activeName: "Michele"
+      activeName: "Michele",
+      activeAvatar: './img/avatar_1.png'
     }
   },
 
@@ -184,7 +185,8 @@ createApp({
         
         console.log(contacts[activeChat].name)
         this.activeName = this.contacts[activeChat].name
-        return this.activeName
+        this.activeAvatar = this.contacts[activeChat].avatar
+        return this.activeName, this.activeAvatar
     },
 
   },
