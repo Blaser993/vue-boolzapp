@@ -64,6 +64,7 @@
 
                     <ul class="chatlist__chats px-0 col-auto">
                         <li class="chats__preview align-middle ms-0"
+                        :class=" this.activeState === true ? 'active' : ''"
                         @click="selectChat(activeChat)" 
                         v-for="(contact, activeChat) in contacts">
                             <img class="preview__pic col-auto flex-shrink-0 mx-2" :src="contact.avatar" />
@@ -110,18 +111,16 @@
                         
                         <div  
                         class="chatting__content col-auto flex-grow-1 m-0 ">
-                            <ul class="col-12 row flex-column  m-2">
-                                <li class="message sent">
-                                    <h4 v-for="(elemento, i)" in contacts.messages >
+                            <ul v-for="(elemento, i) in contacts[activeChat].messages" 
+                            class="col-12 row flex-column m-2">
+                                <li class="message"
+                                :class=" elemento.status === 'sent' ? 'sent' : 'received'">
+                                    <h4 >
                                         {{elemento.message}}
                                     </h4><h6>time</h6>
                                 </li>
                             </ul>
 
-                            <ul class="col-12 row flex-column m-2">
-                                <li class="message received"><h4>Sì</h4> <h6>time</h6></li>
-                                <li class="message received"><h4>Siamo in ascensore eiocoiecnweoicnuoewibceue ww w w ww w3 3wf w f 4wfwf </h4> <h6>time</h6></li>
-                            </ul>
                         </div>
 
                         <div class="chatting__input col-auto align-middle  row p-2 m-0">

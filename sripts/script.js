@@ -174,10 +174,14 @@ createApp({
 
         activeChat: 0,
 
+        activeState: undefined,
+
+        activeMessages: 0,
+
         activeName: "Michele",
 
         activeAvatar: './img/avatar_1.png',
-        
+
         messages: contacts.messages,
     }
   },
@@ -186,12 +190,13 @@ createApp({
 
     selectChat(activeChat){
         
-        this.activeChat = this.contacts[activeChat]
+       
+        this.activeChat = activeChat
         
-        console.log(contacts[activeChat].name)
+        console.log(this.activeChat)
         this.activeName = this.contacts[activeChat].name
         this.activeAvatar = this.contacts[activeChat].avatar
-        return this.activeName, this.activeAvatar
+         
     },
 
   },
