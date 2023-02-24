@@ -137,7 +137,7 @@ i{
 }
 
 .chatting__content{
-    overflow-y: scroll;
+    overflow: auto;
     padding: 4rem 10%;
     height: 300px;
     background-image: url(../img/bg-content.png);
@@ -176,3 +176,8 @@ i{
     justify-self: flex-start;
     background-color:#FFFFFF;
 }
+
+.hide{
+    display: none;
+}
+

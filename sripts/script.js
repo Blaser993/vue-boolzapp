@@ -182,7 +182,9 @@ createApp({
 
         activeAvatar: './img/avatar_1.png',
 
-        
+        placeholderMessage: "Scrivi un messaggio..." ,
+
+        newMessage: "",
     }
   },
 
@@ -198,6 +200,21 @@ createApp({
         this.activeAvatar = this.contacts[activeChat].avatar
          
     },
+
+    sendMessage(newMessage){ 
+        this.newMessage = newMessage
+        newMessage = {
+            date: "10/01/2020",
+            message: newMessage,
+            status: "sent"
+        }
+        contacts[0].messages.push(newMessage)
+        console.log("message sent:", this.newMessage, contacts)
+        newMessage = newMessage
+        return this.newMessage
+    },
+
+
 
   },
 
