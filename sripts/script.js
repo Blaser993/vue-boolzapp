@@ -203,12 +203,13 @@ createApp({
 
     sendMessage(newMessage){ 
         this.newMessage = newMessage
+        activeChat = this.activeChat
         newMessage = {
             date: "10/01/2020",
             message: newMessage,
             status: "sent"
         }
-        contacts[0].messages.push(newMessage)
+        contacts[activeChat].messages.push(newMessage)
         console.log("message sent:", this.newMessage, contacts)
         newMessage = newMessage
         return this.newMessage
