@@ -212,13 +212,16 @@ createApp({
         this.contacts[activeChat].messages.push(newMessage)
         console.log("message sent:", this.inputMessage, contacts)
         
-        this.addAnswer()
+        
        
+        this.answer()
     },
+
+
     
-    addAnswer(){
+    answer(){
         const activeChat = this.activeChat
-        newMessage = {
+        const newMessage = {
             date: "10/01/2020",
             message: "Ok",
             status: "recevied" 
