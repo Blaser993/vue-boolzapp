@@ -184,7 +184,7 @@ createApp({
 
         placeholderMessage: "Scrivi un messaggio..." ,
 
-        newMessage: "",
+        inputMessage: "",
     }
   },
 
@@ -201,20 +201,34 @@ createApp({
          
     },
 
-    sendMessage(newMessage){ 
-        this.newMessage = newMessage
-        activeChat = this.activeChat
-        newMessage = {
+    addMessage(){ 
+       
+        const activeChat = this.activeChat
+        const newMessage = {
             date: "10/01/2020",
-            message: newMessage,
+            message: this.inputMessage,
             status: "sent"
         }
+        this.contacts[activeChat].messages.push(newMessage)
+        console.log("message sent:", this.inputMessage, contacts)
+        
+        this.addAnswer()
+       
+    },
+    
+    addAnswer(){
+        const activeChat = this.activeChat
+        newMessage = {
+            date: "10/01/2020",
+            message: "Ok",
+            status: "recevied" 
+        }
         contacts[activeChat].messages.push(newMessage)
-        console.log("message sent:", this.newMessage, contacts)
-        newMessage = newMessage
-        return this.newMessage
     },
 
+
+    
+    
 
 
   },
