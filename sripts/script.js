@@ -182,7 +182,7 @@ createApp({
 
         activeAvatar: './img/avatar_1.png',
 
-        messages: contacts.messages,
+        
     }
   },
 
@@ -190,7 +190,7 @@ createApp({
 
     selectChat(activeChat){
         
-       
+        this.activeState = activeChat
         this.activeChat = activeChat
         
         console.log(this.activeChat)

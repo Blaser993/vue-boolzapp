@@ -64,7 +64,7 @@
 
                     <ul class="chatlist__chats px-0 col-auto">
                         <li class="chats__preview align-middle ms-0"
-                        :class=" this.activeState === true ? 'active' : ''"
+                        :class=" activeState === activeChat ? 'active' : ''"
                         @click="selectChat(activeChat)" 
                         v-for="(contact, activeChat) in contacts">
                             <img class="preview__pic col-auto flex-shrink-0 mx-2" :src="contact.avatar" />
